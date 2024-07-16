@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Style of NAV bar */
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+}
+nav h1#logo{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 5px 10px;
+}
+nav h1 span {
+    color: rgba(112, 125, 135, 0.704);
+}
+nav h1 a{
+    text-decoration: none;
+    color: black;
+}
+nav h1 span:hover{
+    animation: name 3s infinite;
+}
+@keyframes name {
+    10%{color: rgb(120, 150, 160);}
+    30%{color: rgb(92, 119, 127);}
+    50%{color: rgb(85, 111, 120);}
+    70%{color: rgb(74, 94, 100);}
+    90%{color: rgba(62, 76, 84, 0.625);}    
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    left: 302px;
+    top: 15px;
+    font-size: 22px;
+}
+nav input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0 10px 300px;
+    padding: 3px 0 0 20px;
+    color: black;
+    font-size: large;
+}
+nav ul{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size:larger;
+    margin: 15px 20px 0 0;
+}
+nav li a{
+    text-decoration: none;
+    color: rgba(112, 125, 135, 0.704);
+}
+nav li a:hover{
+    color: rgb(79, 88, 95);
+    font-weight: bolder;
+}
+.menudrop, .search_mediaQuery, .menuSign{
+    display: none;
+}
+
+/* this place for style of container
+    some advices:
+        1- you must create file "pictures" for images
+        2- css & html without files
+        3- if you need any helpful of me, please, Don't shame from me (joke)
+        4- please, focus on arranging of code
+        5- please, focus on classname and nametag when you select it in css code
+        علشان متبوظش الشكل بتا الناف او اى حاجه انت عاملها انا حاولت انى ابعد عن اى اسماء 
+        ممكن تتشابه معاكم
+*/
+/* This style of container only to test page */
+.container span{
+    font-size: large;
+    color: red;
+}
+.container .evaluate{
+    text-align: center;
+}
+.container i{
+    color: gold;
+    font-size: x-large;
+}
+.container header{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: imgsite 15s 0s infinite forwards;
+    margin-bottom: 50px;
+}
+@keyframes imgsite{
+    0%{background-image: url(Pictures/commerical\ center.jpg);}
+    25%{background-image: url(Pictures/header\ 1.jpg);}
+    50%{background-image: url(Pictures/104.jpg);}
+    75%{background-image: url(Pictures/header\ 2.jpg);}
+    100%{background-image: url(Pictures/header\ 3.jpg);}
+}
+.container .intrudction h2, .container .intrudction p{
+    text-align: center;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.container .media{
+    background-color: rgba(112, 125, 135, 0.704);
+    padding: 30px 0;
+    margin: 50px 0;
+}
+.container video{
+    width: 40%;
+    margin:0 30%; 
+}
+.container audio{
+    width: 40%;
+    margin: 10px 30%;
+}
+
+
+.container .headline{
+    text-decoration: 3px solid black underline;
+    text-align: center;
+    margin-top: 80px;
+}
+.container .shoping .products{
+    width: 80%;
+    margin: 80px 9%;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 15px;
+}
+.container .shoping .product{
+    border: 4px solid black;
+    padding: 15px;
+}
+.shoping .product img{
+    width: 200px;
+    height: 200px;
+}
+.shoping .product h4{
+    margin: 3px 0;
+}
+.shoping .product button{
+    background-color: rgba(112, 125, 135, 0.704);
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+.shoping .product button:hover{
+    background-color: rgb(79, 88, 95);
+    scale: 1.07;
+    cursor: pointer;
+}
+
+
+.Cinema .content{
+    width: 73%;
+    display: flex;
+    margin: 80px 0 80px 13.5%;
+}
+.Cinema .content .swap{
+    font-size: x-large;
+    align-self: center;
+    font-weight: bolder;
+}
+.Cinema .content .swap:hover{
+    color: rgba(112, 125, 135, 0.704);
+}
+.container .Cinema .movies{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+.movies .movie{
+    padding: 15px;
+    animation: color 3s infinite;
+}
+.movies .movie img{
+    width: 215px;
+    height: 200px;
+}
+.movies .movie h4{
+    margin: 3px 0;
+}
+.movies .movie p{
+    margin: 0 5px;
+}
+.movies .movie button{
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    margin: 5px 0 0 0;
+}
+.movies .movie button:hover{
+    background-color: rgb(0, 249, 0);
+    scale: 1.07;
+    cursor: pointer;
+}
+@keyframes color {
+    0%{
+        border-top: 4px solid red ;
+        border-right: 4px solid rgb(255, 128, 0) ;
+        border-bottom: 4px solid orange ;
+        border-left: 4px solid yellow ;
+    }
+    25%{
+        border-right: 4px solid red ;
+        border-bottom: 4px solid rgb(255, 128, 0) ;
+        border-left: 4px solid orange ;
+        border-top: 4px solid yellow ;
+    }
+    50%{
+        border-bottom: 4px solid red ;
+        border-left: 4px solid rgb(255, 128, 0) ;
+        border-top: 4px solid orange ;
+        border-right: 4px solid yellow ;
+    }
+    75%{
+        border-left: 4px solid red ;
+        border-top: 4px solid rgb(255, 128, 0) ;
+        border-right: 4px solid orange ;
+        border-bottom: 4px solid yellow ;
+    }
+    100%{
+        border-top: 4px solid red ;
+        border-right: 4px solid rgb(255, 128, 0) ;
+        border-bottom: 4px solid orange ;
+        border-left: 4px solid yellow ;
+    }
+}
+
+
+.container .restaurant .foods{
+    width: 80%;    
+    margin: 80px 9%;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 15px;
+}
+.container .restaurant .food{
+    padding: 15px;
+    border: 4px solid rgb(0, 255, 0);
+}
+.container .food img{
+    width: 200px;
+    height: 200px;
+}
+.container .food p{
+    margin: 0 5px;
+}
+/* Style of Extre */
+.extre .evaluate{
+    text-align: center;
+}
+.extre .bx-star{
+    font-size: x-large;
+}
+.extre .bx-star:hover, .extre .bx-star:hover{
+    color: gold;
+    cursor: pointer;
+}
+.extre .bxs-star, .extre .bxs-star{
+    color: gold;
+    font-size: x-large;
+    display: none;
+}
+.extre{
+    display: flex;
+}
+body .details, .evaluation{
+    width: 30%;
+    margin: 80px 10%;
+}
+body .details .content{
+    display: flex;
+    border-top: 4px solid silver;
+}
+body .details img{
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+}
+body .details > p{
+    border-bottom: 4px solid silver;
+}
+.evaluation .content{
+    border-top: 4px solid silver;
+    border-bottom: 4px solid silver;
+}
+.evaluation .evaluate{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.evaluation .evaluate i{
+    font-size: xx-large;
+}
+.evaluation textarea{
+    width: 100%;
+    height: 100px;
+    font-size: x-large;
+}
+/* Style of Footer */
+footer{
+    width: 100%;
+    background-color: rgba(112, 125, 135, 0.704);
+}
+footer .first{
+    width: 100%;
+    height: 50px;
+    font-size: xx-large;
+    display: flex;
+}
+footer .first .logo{
+    width: 70%;
+    padding: 10px 50px;
+}
+footer .first .logo span{
+    color: white;
+}
+footer .social{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+footer .social a{
+    color: black;
+}
+footer .social a:hover{
+    color: white;
+}
+footer table{
+    width: 80%;
+    margin: 20px 10%;
+}
+footer td{
+    width: 28%;
+    text-align: center;
+}
+footer .copyright{
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer #copyright{
+    color: white;
+    font-size: large;
+}
+/* Media query to Phone */
+@media (max-width: 480px){
+    /* Style of NAV bar By media Query*/
+    nav .search{
+        display: none;
+    }
+    nav #labSize{
+        display: none;
+    }
+    .menuSign{
+        display: block;
+    }
+    nav .menuSign i{
+        font-size: xx-large;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgba(112, 125, 135, 0.704);
+    }
+    nav .menuSign #closeMenu{
+        display: none;
+    }
+    .menudrop ul{
+        width: 80%;
+        height: 320px;
+        background-color: rgba(0, 0, 0, 0.27);
+        margin: 10px 10%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        animation: open .3s;
+    }
+    @keyframes open {
+        0%{height: 64px; overflow: hidden;}
+        25%{height: 128px; overflow: hidden;}
+        50%{height: 196px; overflow: hidden;}
+        75%{height: 256px; overflow: hidden;}
+        100%{height: 320px;}
+    }
+    .menudrop li{
+        width: 90%;
+        height: 30px;
+        border-radius: 15px;
+        margin: 0 5%;
+        text-align: center;
+        font-size: x-large;
+        transition: 0.3s;
+    }
+    li a{
+        text-decoration: none;
+        color: black;
+    }
+    .menudrop li:hover{
+        background-color: rgba(0, 0, 0, 0.449);
+        scale: 1.09;
+    }
+    .search_mediaQuery{
+        display: block;
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .search_mediaQuery input{
+        width: 100%;
+        height: 30px;
+        font-size: larger;
+        padding: 0 0 0 22px;
+    }
+    .search_mediaQuery i{
+        font-size: 22px;
+        position: absolute;
+        left: 10%;
+        margin: 5px 0 0 3px;
+    }
+
+    /* Style of container By media Query */
+    .container header{
+        height: 350px;
+    }
+    .container  .media video{
+        width: 80%;
+        height: fit-content;
+        margin: 0 10%;
+    }
+    .container .media audio{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+
+    .container .shoping .products{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container .shoping .product{
+        flex-grow: 1;
+    }
+    .container .product img{
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .container .Cinema .content .swap{
+        display: none;
+    }
+    .container .Cinema .movies{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container .Cinema .movie{
+        padding: 10px;
+        flex-grow: 1;
+    }
+    .container .Cinema .movie img{
+        width: 100%;
+    }
+
+
+    .container .restaurant .foods{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 10%;
+    }
+    .container .restaurant img{
+        width: 100%;
+    }
+
+
+    .extre {
+        flex-direction: column;
+    }
+    .extre .details{
+        width: 95%;
+        margin: 0 2.5%;
+    }
+    .extre .details .content img{
+        width: 100px;
+        height: 215px;
+    }
+    .extre .evaluation {
+        width: 95%;
+        margin: 150px 2.5%;
+    }
+    /* Style of Footer By media Query */
+    footer .first{
+        font-size: x-large;
+    }
+    footer .first .logo{
+        width: 30%;
+        padding: 10px 50px 0 10px;
+    }
+    footer .social{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 13px 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    nav .search{
+        display: none;
+    }
+    nav #labSize{
+        display: none;
+    }
+    .menuSign{
+        display: block;
+    }
+    nav .menuSign i{
+        font-size: xx-large;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgba(112, 125, 135, 0.704);
+    }
+    nav .menuSign #closeMenu{
+        display: none;
+    }
+    .menudrop ul{
+        width: 80%;
+        height: 320px;
+        background-color: rgba(0, 0, 0, 0.27);
+        margin: 10px 10%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        animation: open .3s;
+    }
+    @keyframes open {
+        0%{height: 64px; overflow: hidden;}
+        25%{height: 128px; overflow: hidden;}
+        50%{height: 196px; overflow: hidden;}
+        75%{height: 256px; overflow: hidden;}
+        100%{height: 320px;}
+    }
+    .menudrop li{
+        width: 90%;
+        height: 30px;
+        border-radius: 15px;
+        margin: 0 5%;
+        text-align: center;
+        font-size: x-large;
+        transition: 0.3s;
+    }
+    li a{
+        text-decoration: none;
+        color: black;
+    }
+    .menudrop li:hover{
+        background-color: rgba(0, 0, 0, 0.449);
+        scale: 1.09;
+    }
+    .search_mediaQuery{
+        display: block;
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .search_mediaQuery input{
+        width: 100%;
+        height: 30px;
+        font-size: larger;
+        padding: 0 0 0 22px;
+    }
+    .search_mediaQuery i{
+        font-size: 22px;
+        position: absolute;
+        left: 10%;
+        margin: 5px 0 0 3px;
+    }
+
+    /* Style of container By media Query */
+    .container header{
+        height: 350px;
+    }
+    .container  .media video{
+        width: 80%;
+        height: fit-content;
+        margin: 0 10%;
+    }
+    .container .media audio{
+        width: 80%;
+        margin: 0 10%;
+    }
+
+
+    .container .shoping .products{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 20px;
+    }
+    .container .product img{
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .container .Cinema .content{
+        margin: 80px 12%;
+    }
+    .container .Cinema .content .swap{
+        display: none;
+    }
+    .container .Cinema .movies{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+        overflow: visible;
+    }
+    .container .Cinema .movie img{
+        width: 100%;
+        height: 250px;
+    }
+
+
+    .container .restaurant .foods{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+    }
+    .container .restaurant img{
+        width: 100%;
+        height: 220px;
+    }
+
+
+    .extre {
+        flex-direction: column;
+    }
+    .extre .details{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .extre .details .content img{
+        width: 150px;
+        height: 85px;
+    }
+    .extre .evaluation {
+        width: 90%;
+        margin: 100px 5%;
+    }
+    /* Style of Footer By media Query */
+    footer .first{
+        font-size: x-large;
+    }
+    footer .first .logo{
+        width: 30%;
+        padding: 10px 50px 0 10px;
+    }
+    footer .social{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 13px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1300px){
+    nav .search{
+        width: 10%;
+        right: 350px;
+    }
+    nav ul{
+        width: 45%;
+    }
+    .media video{
+        height: fit-content;
+    }
+
+
+    .container .shoping .products{
+        grid-template-columns: repeat(4,auto);
+    }
+
+
+    .container .Cinema .content{
+        width: 87%;
+        margin: 80px ;
+    }
+
+
+    .container .restaurant .foods{
+        grid-template-columns: repeat(4,auto);
+    }
+
+
+    .extre .details img{
+        width: 90px;
+        height: 140px;
+    }
+
+
+    .extre .evaluation textarea{
+        height: 165px;
+    }
+}

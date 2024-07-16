@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Pictures/zzzz.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.div1{
+    display: inline-block;
+    align-items: center;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+}
+.payment-form label {
+    display:block ;
+    margin: 10px 0 5px;
+}
+.payment-form input {
+    width: calc(50% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 400px;
+}
+.payment-form input:hover {
+    border-color: #777;
+}
+.payment-form input:focus {
+    border-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.payment-form button:hover {
+    background-color: #0056b3;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.nav-buttons button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 480px){
+    body{
+        height: 1200px;
+    }
+    .container{
+        width: 80%;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+    .div1 input , .div2 input{
+        width: 95%;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        width: 85%;
+    }
+    .top{
+        width: 96%;
+        justify-content: space-between;
+    }
+    .div1{
+        width: 45%;
+    }
+    .div1 input , .div2 input{
+        width: 100%;
+    }
+}

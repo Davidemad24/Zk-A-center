@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Restaurant.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Abo Khalil Restaurant</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="aa">
+        <h1 id="logo"><a href=""><span>ZK&A</span>center</a></h1>
+        <div class="search">
+            <i class='bx bx-search-alt'></i>
+            <input type="search" placeholder="search...">
+        </div>
+        <ul id="labSize">
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="Cinema.html">Cinema</a></li>
+            <li><a href="Restaurant.html">Restaurant</a></li>
+            <li><a href="Shoping.html">Shoping</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="Map.html">Map</a></li>
+            <li>
+                <a href="sign_in.html">Login </a>|
+                <a href="sign_up.html"> Sign UP</a>
+            </li>
+        </ul>
+        <div class="menuSign">
+            <i id="openMenu" class="fa-solid fa-bars"></i>
+            <i id="closeMenu" class="fa-solid fa-xmark"></i>
+        </div>
+    </nav>
+    <div class="search_mediaQuery">
+        <i class='bx bx-search-alt'></i>
+        <input type="search" placeholder="search...">
+    </div>
+    <div class="menudrop">
+        <ul>
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="Cinema.html">Cinema</a></li>
+            <li><a href="Restaurant.html">Restaurant</a></li>
+            <li><a href="Shoping.html">Shoping</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="Map.html">Map</a></li>
+            <li><a href="sign_in.html">Login </a></li>
+            <li><a href="sign_up.html"> Sign UP</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="zz">
+                    <li><a href="#breakfast">Breakfast</a></li>
+                    <li><a href="#lunch">Lunch</a></li>
+                    <li><a href="#dinner">Dinner</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><a href="#drinks">drink</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="poster">
+            <h1>Welcome to Abo Khalil Restaurant</h1>
+            <p>Experience the taste of tradition</p>
+        </div>
+        <section id="breakfast" class="menu-section ">
+            <h2>Breakfast</h2>
+            <div class="menu-item">
+                <img src="Pictures/b1.jpg" alt="Breakfast Item 1">
+                <button onclick="showDescription('breakfast1')">Show Description</button>
+                <p id="breakfast1" class="description">Delicious pancakes with syrup.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/b2.jpg" alt="Breakfast Item 1">
+                <button onclick="showDescription('breakfast2')">Show Description</button>
+                <p id="breakfast2" class="description">Delicious pancakes with syrup.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/b3.jpg" alt="Breakfast Item 1">
+                <button onclick="showDescription('breakfast3')">Show Description</button>
+                <p id="breakfast3" class="description">Delicious pancakes with syrup.</p>
+            </div>
+            <!-- Add more breakfast items here -->
+        </section>
+        <section id="lunch" class="menu-section qq">
+            <h2>Lunch</h2>
+            <div class="menu-item">
+                <img src="Pictures/lu2.jpg" alt="Lunch Item 1">
+                <button onclick="showDescription('lunch1')">Show Description</button>
+                <p id="lunch1" class="description">Grilled chicken sandwich with fries.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/lu1.jpg" alt="Lunch Item 1">
+                <button onclick="showDescription('lunch2')">Show Description</button>
+                <p id="lunch2" class="description">Grilled chicken sandwich with fries.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/lu3.jpg" alt="Lunch Item 1">
+                <button onclick="showDescription('lunch3')">Show Description</button>
+                <p id="lunch3" class="description">Grilled chicken sandwich with fries.</p>
+            </div>
+            <!-- Add more lunch items here -->
+        </section>
+        <section id="dinner" class="menu-section ww">
+            <h2>Dinner</h2>
+            <div class="menu-item">
+                <img src="Pictures/di1-1.jpg" alt="Dinner Item 1">
+                <button onclick="showDescription('dinner1')">Show Description</button>
+                <p id="dinner1" class="description">Steak with mashed potatoes and vegetables.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/di2-1.jpg" alt="Dinner Item 1">
+                <button onclick="showDescription('dinner2')">Show Description</button>
+                <p id="dinner2" class="description">Steak with mashed potatoes and vegetables.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/di3-1.jpg" alt="Dinner Item 1">
+                <button onclick="showDescription('dinner3')">Show Description</button>
+                <p id="dinner3" class="description">Steak with mashed potatoes and vegetables.</p>
+            </div>
+            <!-- Add more dinner items here -->
+        </section>
+        <section id="desserts" class="menu-section qq">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="Pictures/di1.jpg" alt="Dessert Item 1">
+                <button onclick="showDescription('dessert1')">Show Description</button>
+                <p id="dessert1" class="description">Chocolate cake with ice cream.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/di2.jpg" alt="Dessert Item 1">
+                <button onclick="showDescription('dessert2')">Show Description</button>
+                <p id="dessert2" class="description">Chocolate cake with ice cream.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/di3.jpg" alt="Dessert Item 1">
+                <button onclick="showDescription('dessert3')">Show Description</button>
+                <p id="dessert3" class="description">Chocolate cake with ice cream.</p>
+            </div>
+            <!-- Add more dessert items here -->
+        </section>
+        </section>
+        <section id="drinks" class="menu-section ww">
+            <h2>drinks</h2>
+            <div class="menu-item">
+                <img src="Pictures/dr1.jpg" alt="Dessert Item 1">
+                <button onclick="showDescription('drink1')">Show Description</button>
+                <p id="drink1" class="description">Chocolate cake with ice cream.</p>
+            </div>
+            <div class="menu-item">
+                <img src="Pictures/dr2.jpg" alt="Dessert Item 1">
+                <button onclick="showDescription('drink2')">Show Description</button>
+                <p id="drink2" class="description">Chocolate cake with ice cream.</p>
+            </div>
+            <!-- Add more dessert items here -->
+        </section>
+    </div>
+    <footer>
+        <div class="first">
+            <div class="logo"><span>ZK&A</span>center</div>
+            <div class="social">
+                <a
+                    href="https://www.facebook.com/people/%C4%8E%C4%A9v%C4%83%C4%8F-%C4%98m%C3%A4%C4%8F/pfbid02smR9NxDPg15fyXKip2mDtdYhqfW9dx54qWMgMaAkUsc1CtwRcwZHJvscfRFTJkJhl/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.google-plus.com"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <table class="second">
+            <tr>
+                <th>NAME</th>
+                <th>FIRST PAGE</th>
+                <th>SECOND PAGE</th>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Home</td>
+                <td>Map</td>
+            </tr>
+            <tr>
+                <td>Ziad</td>
+                <td>Sign UP</td>
+                <td>Login</td>
+            </tr>
+            <tr>
+                <td>Khaled</td>
+                <td>Restaurant</td>
+                <td>Payment</td>
+            </tr>
+            <tr>
+                <td>Hussen</td>
+                <td>Cinema</td>
+                <td>Shoping</td>
+            </tr>
+        </table>
+        <div class="copyright">
+            <!-- Copyright sign -->
+            <p><span id="copyright">&copy;</span> All rights preserved for <span>ZK&A</span>center</p>
+            <p>Thank you for choosing our commerical center</p>
+        </div>
+    </footer>
+    <!-- JS PAGE -->
+    <script src="Restaurant.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("Pictures/6173960.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+p{
+    font-size: 20px;
+    color: grey;
+    margin-top: 10px;
+}
+hr{
+    background-color: rgba(128, 128, 128, 0.555);
+    height: 3px;
+    border: none; 
+    margin-top: 10px;
+}
+/* Style of NAV bar */
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    font-family: serif;
+    color: white;
+}
+nav h1#logo{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 5px 10px;
+}
+nav h1 span {
+    color: rgba(112, 125, 135, 0.704);
+}
+nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+nav h1 span:hover{
+    animation: name 3s infinite;
+}
+@keyframes name {
+    10%{color: rgb(120, 150, 160);}
+    30%{color: rgb(92, 119, 127);}
+    50%{color: rgb(85, 111, 120);}
+    70%{color: rgb(74, 94, 100);}
+    90%{color: rgba(62, 76, 84, 0.625);}    
+}
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    left: 302px;
+    top: 15px;
+    font-size: 22px;
+}
+nav input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0 10px 300px;
+    padding: 3px 0 0 20px;
+    color: black;
+    font-size: large;
+}
+nav ul{
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size:larger;
+    margin: 15px 20px 0 0;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    color: rgb(79, 88, 95);
+    font-weight: bolder;
+}
+.menudrop, .search_mediaQuery, .menuSign{
+    display: none;
+}
+/* this place for style of container
+    some advices:
+        1- you must create file "pictures" for images
+        2- css & html without files
+        3- if you need any helpful of me, please, Don't shame from me (joke)
+        4- please, focus on arranging of code
+        5- please, focus on classname and nametag when you select it in css code
+        علشان متبوظش الشكل بتا الناف او اى حاجه انت عاملها انا حاولت انى ابعد عن اى اسماء 
+        ممكن تتشابه معاكم
+*/
+/* This style of container only to test page */
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+.mall-pic{
+    width: 100%;
+    height: 800px;
+    border-radius: 1px;
+}
+.welcome{
+    text-align: center;
+}
+.links1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.links1  a{
+    text-decoration: none;
+    color: #0f88da;
+    font-size: 24px;
+    background-color:rgba(0, 0, 0, 0.497);
+    padding: 5px;
+    border: 2px solid rgb(0, 67, 237);
+}
+.men-main-pic, .women-main-pic, .kids-main-pic{
+    margin-top: 10px;
+    width: 100%;
+    height: 800px;
+}
+.men h2, .women h2, .kids h2{
+    text-align: center;
+    color: #0f88da;
+    margin-bottom: 8px;
+}
+.men-prod , .women-products, .kids-products{
+    width: 94%;
+    margin-left:6%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.men-prod > div, .women-products > div, .kids-products > div{
+    width: 350px;
+    height: fit-content;
+}
+.men-prod img, .women-products img, .kids-products img{
+    width: 350px;
+    height: 420px;
+    border: #7e7e7e 2px solid;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+.men-prod p, .women-products p, .kids-products p{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+/* Style of Footer */
+footer{
+    width: 100%;
+    background-color: rgba(112, 125, 135, 0.704);
+}
+footer .first{
+    width: 100%;
+    height: 50px;
+    font-size: xx-large;
+    display: flex;
+}
+footer .first .logo{
+    width: 70%;
+    padding: 10px 50px;
+}
+footer .first .logo span{
+    color: white;
+}
+footer .social{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+footer .social a{
+    color: black;
+}
+footer .social a:hover{
+    color: white;
+}
+footer table{
+    width: 80%;
+    margin: 20px 10%;
+}
+footer td{
+    width: 28%;
+    text-align: center;
+}
+footer .copyright{
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer #copyright{
+    color: white;
+    font-size: large;
+}
+/* Media query to Phone */
+@media (max-width: 480px){
+    /* Style of NAV bar By media Query*/
+    nav .search{
+        display: none;
+    }
+    nav #labSize{
+        display: none;
+    }
+    .menuSign{
+        display: block;
+    }
+    nav .menuSign i{
+        font-size: xx-large;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgba(112, 125, 135, 0.704);
+    }
+    nav .menuSign #closeMenu{
+        display: none;
+    }
+    .menudrop ul{
+        width: 80%;
+        height: 320px;
+        background-color: rgba(0, 0, 0, 0.27);
+        margin: 10px 10%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        animation: open .3s;
+    }
+    @keyframes open {
+        0%{height: 64px; overflow: hidden;}
+        25%{height: 128px; overflow: hidden;}
+        50%{height: 196px; overflow: hidden;}
+        75%{height: 256px; overflow: hidden;}
+        100%{height: 320px;}
+    }
+    .menudrop li{
+        width: 90%;
+        height: 30px;
+        border-radius: 15px;
+        margin: 0 5%;
+        text-align: center;
+        font-size: x-large;
+        transition: 0.3s;
+    }
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menudrop li:hover{
+        background-color: rgba(0, 0, 0, 0.449);
+        scale: 1.09;
+    }
+    .search_mediaQuery{
+        display: block;
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .search_mediaQuery input{
+        width: 100%;
+        height: 30px;
+        font-size: larger;
+        padding: 0 0 0 22px;
+    }
+    .search_mediaQuery i{
+        font-size: 22px;
+        position: absolute;
+        left: 10%;
+        margin: 5px 0 0 3px;
+    }
+    /* Style of Container By Media Query */
+    .hero > div > img{
+        height: 400px;
+    }
+    .links1{
+        padding: 10px 0 5px 0;
+    }
+    .links1  a{
+        font-size: 15px;
+    }
+    .hero > div > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero > div > div div{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .hero > div > div img{
+        width: 90%;
+        height: 300px;
+    }
+    /* Style of Footer By media Query */
+    footer .first{
+        font-size: x-large;
+    }
+    footer .first .logo{
+        width: 30%;
+        padding: 10px 50px 0 10px;
+    }
+    footer .social{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 13px 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    nav .search{
+        display: none;
+    }
+    nav #labSize{
+        display: none;
+    }
+    .menuSign{
+        display: block;
+    }
+    nav .menuSign i{
+        font-size: xx-large;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: rgba(112, 125, 135, 0.704);
+    }
+    nav .menuSign #closeMenu{
+        display: none;
+    }
+    .menudrop ul{
+        width: 80%;
+        height: 320px;
+        background-color: rgba(0, 0, 0, 0.27);
+        margin: 10px 10%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        animation: open .3s;
+    }
+    @keyframes open {
+        0%{height: 64px; overflow: hidden;}
+        25%{height: 128px; overflow: hidden;}
+        50%{height: 196px; overflow: hidden;}
+        75%{height: 256px; overflow: hidden;}
+        100%{height: 320px;}
+    }
+    .menudrop li{
+        width: 90%;
+        height: 30px;
+        border-radius: 15px;
+        margin: 0 5%;
+        text-align: center;
+        font-size: x-large;
+        transition: 0.3s;
+    }
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menudrop li:hover{
+        background-color: rgba(0, 0, 0, 0.449);
+        scale: 1.09;
+    }
+    .search_mediaQuery{
+        display: block;
+        width: 80%;
+        margin: 10px 10%;
+    }
+    .search_mediaQuery input{
+        width: 100%;
+        height: 30px;
+        font-size: larger;
+        padding: 0 0 0 22px;
+    }
+    .search_mediaQuery i{
+        font-size: 22px;
+        position: absolute;
+        left: 10%;
+        margin: 5px 0 0 3px;
+    }
+    /* Style of Container By media Query */
+    .hero > div > img{
+        height: 500px;
+    }
+    .hero > div > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero > div > div div{
+        width: 45%;
+        margin: 0 1%;
+    }
+    .hero > div > div img{
+        width: 90%;
+        height: 300px;
+    }
+    /* Style of Footer By media Query */
+    footer .first{
+        font-size: x-large;
+    }
+    footer .first .logo{
+        width: 30%;
+        padding: 10px 50px 0 10px;
+    }
+    footer .social{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 13px 0;
+    }
+}
+@media (min-width: 769px) and (max-width: 1300px){
+    nav .search{
+        width: 10%;
+        right: 350px;
+    }
+    nav ul{
+        width: 45%;
+    }
+    
+    /* Style of Container By media Query */
+    
+}
